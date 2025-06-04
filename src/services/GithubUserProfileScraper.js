@@ -161,10 +161,10 @@ class GitHubProfileScraper {
       results.push(scrapedProfile);
       
       // Add delay between requests to avoid rate limiting
-      /* if (i < profileUrls.length - 1) {
+       if (i < profileUrls.length - 1) {
         console.log('Waiting 2 seconds before next request...');
         await new Promise(resolve => setTimeout(resolve, 2000));
-      }*/
+      }
     }
 
     return results;
