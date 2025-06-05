@@ -1,11 +1,11 @@
 
-# 🔍 GitHub Profile Scraper & AI Analyzer
+# GitHub Profile Scraper & AI Analyzer
 
 This project scrapes multiple GitHub user profiles based on a search term, extracts detailed profile information, and analyzes them using an AI model (Google Gemini or similar). It includes proper error handling, rate limiting, and modular structure.
 
 ---
 
-## 📂 Features
+### Features
 
 - Scrapes GitHub user profiles from search result pages using Puppeteer.
 - Extracts detailed information including pinned repositories, contributions, and social links.
@@ -15,17 +15,16 @@ This project scrapes multiple GitHub user profiles based on a search term, extra
 
 ---
 
-## 🛠️ Tech Stack
+### Tech Stack
 
 - Node.js
 - Puppeteer
 - Express 
 - AI Integration (Google Gemini via `@google/genai`)
-- Custom error handling via `AppError` class
 
 ---
 
-## 📦 Project Structure
+### Project Structure
 
 ```
 github-scraper/
@@ -51,22 +50,22 @@ github-scraper/
 
 ---
 
-## 🚀 Getting Started
+### Getting Started
 
-### 1. Clone the Repository
+#### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/github-scraper-ai.git
-cd github-scraper-ai
+https://github.com/kaldid/github-ai-profiler.git
+cd github-ai-profiler
 ```
 
-### 2. Install Dependencies
+#### 2. Install Dependencies
 
 ```bash
 npm install
 ```
 
-### 3. Setup Environment Variables
+#### 3. Setup Environment Variables
 
 Create a `.env` file in the root directory:
 
@@ -76,7 +75,7 @@ GEMINI_API_KEY=your_google_genai_api_key
 
 ---
 
-## ⚙️ Running the Scraper
+### Running the Scraper
 
 If you're using a standalone script (no server):
 
@@ -92,9 +91,9 @@ node server.js
 
 ---
 
-## 📮 Using with Postman
+### Using with Postman
 
-### Step 1: Start the Server
+#### Step 1: Start the Server
 
 If you’re exposing the scraping through an API:
 
@@ -104,7 +103,7 @@ npm run dev
 node server.js
 ```
 
-### Step 2: Send a POST Request
+#### Step 2: Send a POST Request
 
 **URL:**  
 ```
@@ -118,7 +117,7 @@ GET http://localhost:3000/github-users
 | searchTerm  | user_you_want_to_search |
 
 
-### Step 3: Get AI Analysis Output
+#### Step 3: Get AI Analysis Output
 
 You’ll receive:
 
@@ -140,7 +139,7 @@ You’ll receive:
 
 ---
 
-## 🧪 Example Search Terms
+### Example Search Terms
 
 - `python developer`
 - `data scientist`
